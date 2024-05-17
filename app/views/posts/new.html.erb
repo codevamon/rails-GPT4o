@@ -1,0 +1,9 @@
+<div class="mx-auto md:w-2/3 w-full flex flex-col items-center bg-gray-800 text-white p-6 rounded-lg shadow-lg">
+  <div class="w-full">
+    <h1 class="text-3xl font-bold mb-6">New Post</h1>
+    <%= render 'form', post: @post %>
+    <div class="flex justify-between mt-6">
+      <%= link_to 'Back', posts_path, class: "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded transition duration-200" %>
+    </div>
+  </div>
+</div>
